@@ -581,24 +581,28 @@ html{
   margin-top: 0.75rem;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .mb-4{
   margin-bottom: 1rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.ml-4{
+  margin-left: 1rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .-mb-1{
@@ -623,6 +627,10 @@ html{
 
 .inline-flex{
   display: inline-flex;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-10{
@@ -665,12 +673,12 @@ html{
   width: 1.25rem;
 }
 
-.w-16{
-  width: 4rem;
-}
-
 .w-5\/6{
   width: 83.333333%;
+}
+
+.w-16{
+  width: 4rem;
 }
 
 .w-4{
@@ -781,12 +789,16 @@ html{
   border-radius: 0.5rem;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
 
-.rounded{
-  border-radius: 0.25rem;
+.border-0{
+  border-width: 0px;
 }
 
 .bg-purple-500{
@@ -798,9 +810,39 @@ html{
   background-color: currentColor;
 }
 
+.bg-indigo-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 231 255 / var(--tw-bg-opacity));
 }
 
 .bg-purple-100{
@@ -851,9 +893,9 @@ html{
      object-position: center;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-4{
@@ -861,9 +903,9 @@ html{
   padding-bottom: 1rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-2\.5{
@@ -879,6 +921,11 @@ html{
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pb-5{
@@ -970,6 +1017,16 @@ html{
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-indigo-500{
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
+}
+
 .text-purple-500{
   --tw-text-opacity: 1;
   color: rgb(168 85 247 / var(--tw-text-opacity));
@@ -1007,6 +1064,16 @@ html{
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:bg-indigo-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-br:hover{
@@ -1047,9 +1114,22 @@ html{
 }
 
 @media (min-width: 640px){
+  .sm\:items-start{
+    align-items: flex-start;
+  }
+
+  .sm\:text-left{
+    text-align: left;
+  }
+
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .sm\:text-3xl{
@@ -1113,6 +1193,10 @@ html{
     top: 0px;
   }
 
+  .lg\:inline-block{
+    display: inline-block;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -1125,12 +1209,12 @@ html{
     min-height: 0px;
   }
 
-  .lg\:w-3\/4{
-    width: 75%;
-  }
-
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:w-3\/4{
+    width: 75%;
   }
 
   .lg\:max-w-lg{
@@ -1169,25 +1253,6 @@ html{
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
-}
-
-@media (min-width: 1280px){
-  .xl\:w-2\/4{
-    width: 50%;
-  }
-
-  .xl\:space-x-8 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2rem * var(--tw-space-x-reverse));
-    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-}5rem;
   }
 
   .lg\:text-5xl{
