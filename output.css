@@ -625,10 +625,6 @@ html{
   display: inline-flex;
 }
 
-.hidden{
-  display: none;
-}
-
 .h-10{
   height: 2.5rem;
 }
@@ -807,11 +803,6 @@ html{
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-indigo-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 231 255 / var(--tw-bg-opacity));
-}
-
 .bg-purple-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 232 255 / var(--tw-bg-opacity));
@@ -860,9 +851,9 @@ html{
      object-position: center;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-4{
@@ -870,9 +861,9 @@ html{
   padding-bottom: 1rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-2\.5{
@@ -979,11 +970,6 @@ html{
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.text-indigo-500{
-  --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
-}
-
 .text-purple-500{
   --tw-text-opacity: 1;
   color: rgb(168 85 247 / var(--tw-text-opacity));
@@ -1070,11 +1056,6 @@ html{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
-
-  .sm\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
 }
 
 @media (min-width: 768px){
@@ -1130,10 +1111,6 @@ html{
 
   .lg\:top-0{
     top: 0px;
-  }
-
-  .lg\:inline-block{
-    display: inline-block;
   }
 
   .lg\:flex{
