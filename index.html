@@ -14,12 +14,10 @@
         }
     </style>
 </head>
-<body x-data="{open: false, scrolledFromTop: false}"
-@scroll.window="window.pageYOffset > 60 ? scrolledFromTop = true : scrolledFromTop = false"
-x-init="window.pageYOffset > 60 ? scrolledFromTop = true : scrolledFromTop = false">
+<body x-data="{open: false, scrolledFromTop: false}">
     <header class="fixed font-Montserrat top-0 w-full h-18 text-white z-20 transition delay-100 bg-purple-500"
     >
-        <div class="container mx-auto flex justify-between items-center px-5 py-4"
+        <div class="container mx-auto flex justify-between items-center px-4 py-4"
         >
             <a href="#"
                 class="text-lg sm:text-2xl font-bold uppercase tracking-wide flex items-center justify-center hover:text-black"><i
@@ -56,7 +54,7 @@ x-init="window.pageYOffset > 60 ? scrolledFromTop = true : scrolledFromTop = fal
                 " :class="{'translate-x-full': !open, 'transition delay-100 translate-x-0': open}"
                 >
                     <li><a href="#home" @click="open = false" class="text-sm md:text-lg uppercase hover:text-black">home</a></li>
-                    <li><a href="#work" @click="open = false" class="text-sm md:text-lg  uppercase hover:text-black">courses</a></li>
+                    <li><a href="#courses" @click="open = false" class="text-sm md:text-lg  uppercase hover:text-black">courses</a></li>
                     <li><a href="#contacts" @click="open = false" class="text-sm md:text-lg uppercase hover:text-black">achievements</a></li>
                     <li><a href="#contacts" @click="open = false" class="text-sm md:text-lg uppercase hover:text-black">Testimonials</a></li>
                     <li><a href="#contacts" @click="open = false" class="text-sm md:text-lg uppercase hover:text-black">contact</a></li>
@@ -65,14 +63,74 @@ x-init="window.pageYOffset > 60 ? scrolledFromTop = true : scrolledFromTop = fal
             </nav>
         </div>
     </header>
-    <section class="px-4 font-Montserrat relative bg-hero-pattern h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center">
-        <div class="container mx-auto text-purple-900">
+    <section class="font-Montserrat relative bg-hero-pattern h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" id="home">
+        <div class="container px-4 mx-auto text-purple-900">
             <span class="text-2xl md:text-3xl lg:text-4xl font-semibold">Hello! 👋 My name is</span>
             <h1 class="mt-2 text-3xl md:text-4xl lg:text-5xl font-semibold">Sonia</h1>
             <p class="mt-1 italic text-lg md:text-xl font-medium">An Educator</p>
             <a href="#home" class="mt-3 inline-block text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center">Learn More</a>
         </div>
     </section>
+    <section class="text-gray-600 body-font bg-gray-100" id="courses">
+        <div class="container mx-auto  px-4 py-24 font-Montserrat ">
+            <div class="text-center mb-20">
+                <h2 class="sm:text-3xl text-2xl font-medium uppercase text-gray-900 mb-4">The Courses <span class="text-purple-500">we offered</span></h2>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 italic">We provide great education in town for professional courses select the best course for you and start increasing your skillset today!</p>
+                <div class="flex mt-6 justify-center">
+                  <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+                </div>
+              </div>
+            <div class="flex md:flex-row flex-col items-center">
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <img class="object-cover object-center rounded" alt="hero" src="./images/undraw_learning_re_32qv(2).svg">
+                  </div>
+                  <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <p class="mb-8 leading-relaxed">We provide the following courses with timely completion of syllabus,quality teaching with the systematic subject sequence and 
+
+                        Well researched study materials.</p>
+                    <div class="flex flex-col items-start text-left -mb-1 space-y-2.5">
+                        <a>
+                          <span class="bg-purple-100 text-purple-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span> SSC CGL prelims and mains maths.
+                        </a>
+                        <a>
+                          <span class="bg-purple-100 text-purple-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span> competitive maths for center and state government exams.
+                        </a>
+                        <a>
+                          <span class="bg-purple-100 text-purple-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span> Preparation for defense exams.
+                        </a>
+                        <a>
+                          <span class="bg-purple-100 text-purple-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span>8th to 10th class maths.
+                          <a>
+                            <span class="bg-purple-100 text-purple-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                <path d="M20 6L9 17l-5-5"></path>
+                              </svg>
+                            </span>Bank exams maths.
+                          </a>
+                        </div>
+                  </div>
+
+            </div>
+        
+          
+        </div>
+      </section>
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
