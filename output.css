@@ -617,6 +617,14 @@ html{
   margin-top: 1.25rem;
 }
 
+.mb-16{
+  margin-bottom: 4rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .block{
   display: block;
 }
