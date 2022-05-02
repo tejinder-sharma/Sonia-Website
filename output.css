@@ -725,6 +725,10 @@ html{
   width: 5rem;
 }
 
+.max-w-md{
+  max-width: 28rem;
+}
+
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -874,7 +878,7 @@ html{
 }
 
 .bg-hero-pattern{
-  background-image: linear-gradient(to right, rgba(168, 85, 247, 0.6), rgba(168, 85, 247, 0.1)), url('https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: linear-gradient(to right, rgba(168, 85, 247, 0.7), rgba(168, 85, 247, 0.1)), url('https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
 
 .bg-gradient-to-r{
