@@ -653,6 +653,10 @@ html{
   display: inline-flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .h-10{
   height: 2.5rem;
 }
@@ -691,6 +695,10 @@ html{
 
 .h-5{
   height: 1.25rem;
+}
+
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .w-full{
@@ -967,6 +975,11 @@ html{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pb-5{
